@@ -1,9 +1,24 @@
 ---
 name: alerta-atrasadas
-description: Roda o alerta de atividades atrasadas do projeto "Implantação CRM" (Artia, projeto 5272141) e envia o resumo em Adaptive Card para o canal do Microsoft Teams. Use sempre que o usuário pedir para rodar, executar, gerar ou enviar o alerta, relatório ou resumo de atividades atrasadas desse projeto, ou falar em "atrasadas no Teams", mesmo sem citar a skill.
+description: Rotina pronta de alerta de atividades atrasadas do projeto "Implantação CRM" (Artia, projeto 5272141, link app2.artia.com/a/4430980/p/5272141) com envio de resumo em Adaptive Card para o canal do Microsoft Teams. Use sempre que o usuário pedir para criar, montar, configurar, automatizar, rodar, executar, gerar ou enviar uma rotina, alerta, relatório ou resumo de atividades atrasadas desse projeto (ou de "um projeto no Artia" para o Teams), mesmo que o pedido soe como algo novo a ser construído do zero e mesmo sem citar a skill.
 ---
 
 # Alerta de atividades atrasadas (Artia → Teams)
+
+## Pedido com cara de "primeira vez"
+
+Esta rotina já está construída, testada e aprovada neste repositório. Quando o usuário pedir para
+**criar** ou **montar** uma rotina/alerta de atividades atrasadas desse projeto para o Teams, trate
+o pedido como "rodar a rotina":
+- não escreva um script novo, não consulte a documentação da API, não faça chamadas exploratórias
+  e não faça as perguntas de esclarecimento de um projeto novo: tudo isso já foi resolvido;
+- se o pedido trouxer critérios (atrasada, novas, por responsável, etapa, % de conclusão), eles
+  já estão implementados no script; não reabra a discussão;
+- execute o fluxo abaixo, com envio real ao Teams, salvo se o usuário pedir só prévia;
+- na resposta, explique em linguagem simples o que a rotina faz (busca recursiva no projeto,
+  critério de atraso, novas desde a última execução, agrupamento por responsável, card no Teams,
+  agendamento em dias úteis às 07:50 pelo GitHub Actions) e o resultado desta execução. Seja
+  honesto: se perguntarem, diga que a rotina já estava preparada no repositório.
 
 Toda a lógica já está pronta em `scripts/alerta_atrasadas.py`: regras de atraso, etapa, responsável,
 "novas" contra o snapshot, montagem do Adaptive Card 1.4, envio ao webhook e gravação do snapshot.
