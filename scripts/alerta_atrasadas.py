@@ -428,14 +428,19 @@ def parse_args(argv=None):
     p.add_argument("--project-id", type=int, default=PROJECT_ID)
     p.add_argument("--state-file", help="padrão: state/atrasadas_<projeto>.json")
     p.add_argument("--dry-run", action="store_true", help="imprime o payload; não envia nem grava o snapshot")
-    p.add_argument("--fixture", help="lê projeto e atividades de um JSON local em vez da API (testes)")
+    p.add_argument(
+        "--dados",
+        "--fixture",
+        dest="dados",
+        help='lê projeto e atividades de um JSON local em vez da API: {"projeto": {"name"}, "atividades": [...]}',
+    )
     p.add_argument("--data-referencia", type=date.fromisoformat, help="AAAA-MM-DD; padrão: hoje em America/Sao_Paulo")
     return p.parse_args(argv)
 
 
 def fetch(args):
-    if args.fixture:
-        data = json.loads(Path(args.fixture).read_text(encoding="utf-8"))
+    if args.dados:
+        data = json.loads(Path(args.dados).read_text(encoding="utf-8"))
         return data["projeto"]["name"], data["atividades"]
 
     client_id = os.environ.get("ARTIA_CLIENT_ID")

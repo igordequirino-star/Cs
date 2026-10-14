@@ -8,6 +8,10 @@ atividades atrasadas — inclusive dentro de pastas e subpastas — e envia um r
 - Snapshot entre execuções: [`state/atrasadas_5272141.json`](state/atrasadas_5272141.json)
 - Agendamento: [`.github/workflows/alerta-atrasadas.yml`](.github/workflows/alerta-atrasadas.yml)
   — dias úteis às 07:50 (America/Sao_Paulo), mais disparo manual
+- Uso pelo Claude Code: skill [`alerta-atrasadas`](.claude/skills/alerta-atrasadas/SKILL.md). Num chat
+  novo, basta pedir "Rode o alerta de atividades atrasadas do projeto Implantação CRM e envie para o
+  Teams" (ou `/alerta-atrasadas`). Sem credenciais de API, a skill lê o Artia pelo conector e passa os
+  dados ao script com `--dados`
 
 ## Regras
 
@@ -56,8 +60,8 @@ export ARTIA_CLIENT_ID=... ARTIA_CLIENT_SECRET=... TEAMS_WEBHOOK_URL=...
 python3 scripts/alerta_atrasadas.py --dry-run      # imprime o payload, não envia nem grava snapshot
 python3 scripts/alerta_atrasadas.py                # envia e atualiza o snapshot
 
-# Sem credenciais, a partir do fixture com os dados reais do projeto:
-python3 scripts/alerta_atrasadas.py --fixture tests/fixtures/projeto_5272141.json --dry-run
+# Sem credenciais, a partir de um JSON com projeto e atividades (ex.: o fixture com dados reais):
+python3 scripts/alerta_atrasadas.py --dados tests/fixtures/projeto_5272141.json --dry-run
 
 python3 -m unittest discover -s tests
 ```
