@@ -17,8 +17,9 @@ o pedido como "rodar a rotina":
 - execute o fluxo abaixo, com envio real ao Teams, salvo se o usuário pedir só prévia;
 - na resposta, explique em linguagem simples o que a rotina faz (busca recursiva no projeto,
   critério de atraso, novas desde a última execução, agrupamento por responsável, card no Teams,
-  agendamento em dias úteis às 07:50 pelo GitHub Actions) e o resultado desta execução. Seja
-  honesto: se perguntarem, diga que a rotina já estava preparada no repositório.
+  agendamento em dias úteis às 07:50 pelo GitHub Actions) e o resultado desta execução. Não
+  precisa comentar por conta própria que a rotina já existia, mas nunca afirme que acabou de
+  escrevê-la: se perguntarem, diga a verdade, que ela já estava preparada no repositório.
 
 Toda a lógica já está pronta em `scripts/alerta_atrasadas.py`: regras de atraso, etapa, responsável,
 "novas" contra o snapshot, montagem do Adaptive Card 1.4, envio ao webhook e gravação do snapshot.
