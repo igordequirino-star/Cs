@@ -1,0 +1,249 @@
+{
+  "_origem": "Snapshot do projeto 5272141 lido no Artia em 2026-10-14 (campos usados pela rotina).",
+  "projeto": {
+    "id": "5272141",
+    "name": "Implantação CRM"
+  },
+  "atividades": [
+    {
+      "id": "27650043",
+      "title": "Identificar as metas específicas que deseja alcançar com o CRM.",
+      "status": true,
+      "estimatedEnd": "2026-08-11",
+      "completedPercent": 100,
+      "responsible": {
+        "id": "274124",
+        "name": "Felipe Salata"
+      },
+      "parent": {
+        "id": "5272144",
+        "name": "01-Planejamento e Preparação"
+      }
+    },
+    {
+      "id": "27650045",
+      "title": "Reunir requisitos de negócios e técnicos.",
+      "status": true,
+      "estimatedEnd": "2026-08-12",
+      "completedPercent": 100,
+      "responsible": {
+        "id": "274124",
+        "name": "Felipe Salata"
+      },
+      "parent": {
+        "id": "5272144",
+        "name": "01-Planejamento e Preparação"
+      }
+    },
+    {
+      "id": "27650046",
+      "title": "Selecionar uma equipe de implementação.",
+      "status": true,
+      "estimatedEnd": "2026-08-13",
+      "completedPercent": 100,
+      "responsible": {
+        "id": "274124",
+        "name": "Felipe Salata"
+      },
+      "parent": {
+        "id": "5272144",
+        "name": "01-Planejamento e Preparação"
+      }
+    },
+    {
+      "id": "31542687",
+      "title": "Aprovação Planejamento",
+      "status": true,
+      "estimatedEnd": "2026-08-10",
+      "completedPercent": 100,
+      "responsible": {
+        "id": "274124",
+        "name": "Felipe Salata"
+      },
+      "parent": {
+        "id": "5272144",
+        "name": "01-Planejamento e Preparação"
+      }
+    },
+    {
+      "id": "27650145",
+      "title": "Configurar campos personalizados, layouts de tela e permissões de usuário.",
+      "status": false,
+      "estimatedEnd": "2026-08-19",
+      "completedPercent": 40,
+      "responsible": {
+        "id": "285818",
+        "name": "Igor de Paula Quirino"
+      },
+      "parent": {
+        "id": "5272145",
+        "name": "02-Configuração do CRM"
+      }
+    },
+    {
+      "id": "27650146",
+      "title": "Integrar o CRM com outras ferramentas de negócios, como e-mail e ferramentas de marketing.",
+      "status": true,
+      "estimatedEnd": "2026-09-04",
+      "completedPercent": 100,
+      "responsible": {
+        "id": "285818",
+        "name": "Igor de Paula Quirino"
+      },
+      "parent": {
+        "id": "5272145",
+        "name": "02-Configuração do CRM"
+      }
+    },
+    {
+      "id": "27650148",
+      "title": "Fornecer documentação e recursos de apoio.",
+      "status": false,
+      "estimatedEnd": "2026-08-20",
+      "completedPercent": 0,
+      "responsible": {
+        "id": "285818",
+        "name": "Igor de Paula Quirino"
+      },
+      "parent": {
+        "id": "5272145",
+        "name": "02-Configuração do CRM"
+      }
+    },
+    {
+      "id": "27650147",
+      "title": "Treinar os usuários finais sobre como usar o CRM.",
+      "status": false,
+      "estimatedEnd": "2026-08-20",
+      "completedPercent": 20,
+      "responsible": {
+        "id": "240249",
+        "name": "Maiara Budal"
+      },
+      "parent": {
+        "id": "5272146",
+        "name": "03-Treinamento"
+      }
+    },
+    {
+      "id": "31763660",
+      "title": "Enviar Materal de treinamento",
+      "status": true,
+      "estimatedEnd": "2026-08-14",
+      "completedPercent": 100,
+      "responsible": {
+        "id": "285818",
+        "name": "Igor de Paula Quirino"
+      },
+      "parent": {
+        "id": "5272146",
+        "name": "03-Treinamento"
+      }
+    },
+    {
+      "id": "27650149",
+      "title": "Realizar testes abrangentes para garantir que o CRM atenda às necessidades da empresa.",
+      "status": false,
+      "estimatedEnd": "2026-09-07",
+      "completedPercent": 0,
+      "responsible": {
+        "id": "240249",
+        "name": "Maiara Budal"
+      },
+      "parent": {
+        "id": "5272147",
+        "name": "04-Testes e Ajustes"
+      }
+    },
+    {
+      "id": "27650150",
+      "title": "Fazer ajustes com base no feedback dos usuários.",
+      "status": false,
+      "estimatedEnd": "2026-08-21",
+      "completedPercent": 0,
+      "responsible": {
+        "id": "230591",
+        "name": "Karol "
+      },
+      "parent": {
+        "id": "5272147",
+        "name": "04-Testes e Ajustes"
+      }
+    },
+    {
+      "id": "30672236",
+      "title": "Instalação dos módulos",
+      "status": false,
+      "estimatedEnd": "2026-09-08",
+      "completedPercent": 0,
+      "responsible": {
+        "id": "285818",
+        "name": "Igor de Paula Quirino"
+      },
+      "parent": {
+        "id": "5272147",
+        "name": "04-Testes e Ajustes"
+      }
+    },
+    {
+      "id": "27650151",
+      "title": "Migrar dados existentes para o CRM.",
+      "status": false,
+      "estimatedEnd": "2026-09-11",
+      "completedPercent": 0,
+      "responsible": {
+        "id": "240249",
+        "name": "Maiara Budal"
+      },
+      "parent": {
+        "id": "5272148",
+        "name": "05-Implementação"
+      }
+    },
+    {
+      "id": "27650152",
+      "title": "Lançar o CRM para toda a equipe.",
+      "status": false,
+      "estimatedEnd": "2026-09-08",
+      "completedPercent": 0,
+      "responsible": {
+        "id": "230591",
+        "name": "Karol "
+      },
+      "parent": {
+        "id": "5272148",
+        "name": "05-Implementação"
+      }
+    },
+    {
+      "id": "27650153",
+      "title": "Oferecer suporte contínuo aos usuários.",
+      "status": false,
+      "estimatedEnd": "2026-09-29",
+      "completedPercent": 0,
+      "responsible": {
+        "id": "230591",
+        "name": "Karol "
+      },
+      "parent": {
+        "id": "5272149",
+        "name": "06-Monitoramento e Manutenção"
+      }
+    },
+    {
+      "id": "27650154",
+      "title": "Monitorar o desempenho do sistema e fazer ajustes conforme necessário.",
+      "status": false,
+      "estimatedEnd": "2026-09-28",
+      "completedPercent": 0,
+      "responsible": {
+        "id": "230591",
+        "name": "Karol "
+      },
+      "parent": {
+        "id": "5272149",
+        "name": "06-Monitoramento e Manutenção"
+      }
+    }
+  ]
+}
